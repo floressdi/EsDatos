@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class App {    
     public static void main(String[] args){
         Scanner t = new Scanner(System.in);
@@ -18,7 +17,7 @@ public class App {
 
     public static int sumaIterativa(int vector[]){
         int resVectorIterativo = 0;        
-        for (int i=0; i < vector.length; i++){
+        for (int i=0; i < vector.length; i++){ //O(n)
            resVectorIterativo += vector[i];
         }
         return resVectorIterativo;
@@ -30,7 +29,7 @@ public class App {
             if (tam == 0){
                 return  vector[tam];
             }else{
-                 rta = (vector[tam]) + sumaRecursiva(vector,tam-1);
+                 rta = (vector[tam]) + sumaRecursiva(vector,tam-1); //0(n2)
             }
             return rta;
     }
