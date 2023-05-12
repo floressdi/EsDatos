@@ -17,13 +17,7 @@ public class listaDinamica {
       return suma;
     }
 
-    public static int invertirRecursiva(int  listad, int posicion){
-       if(listad<10){
-           return listad;
-       }else {
-           return listad%10 * (int)Math.pow(10, posicion) + invertirRecursiva(listad/10, posicion-1);
-       }
-    }
+
     public static void main(String[] args){
         listaDinamica listad = new listaDinamica();
         System.out.println("Numeros: ");
@@ -34,6 +28,6 @@ public class listaDinamica {
         }
         System.out.println(listad.listanumeros);
         System.out.println("Suma recursiva: "+ sumaRecursiva(numero));
-        System.out.println("Invertida: "+ invertirRecursiva(listad, numero));
+
     }
 }
