@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/P3.4PilayColadNumeros.iml" filepath="$PROJECT_DIR$/P3.4PilayColadNumeros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListaDinamicaNumeros.iml" filepath="$PROJECT_DIR$/ListaDinamicaNumeros.iml" />
     </modules>
   </component>
 </project>

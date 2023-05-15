@@ -1,28 +1,30 @@
-public class cola {
+public class Cola {
     protected Object[] info;
     protected int frente, fin;
-    public cola(int tam){
+
+    public Cola (int tam){
         info = new Object[tam];
-        frente = fin =tam-1;
+        frente = fin = tam-1;
     }
+
     public boolean isEmpty(){
-        return (frente ==fin);
+        return (frente == fin);
     }
 
     public void insert(Object x){
-        if(fin ==(frente-1 + info.length)% info.length){
+        if ( fin == (frente -1 + info.length)% info.length){
             System.out.println("Error de overflow");
         }else {
             fin = (fin +1)% info.length;
-            info [fin] =x;
+            info [fin] = x;
         }
     }
 
-    public Object remove(){
-        if(isEmpty()){
-            return null;
+    public Object remove (){
+        if (isEmpty()){
+            return  null;
         }
-        frente = (frente +1)% info.length;
+        frente = (frente+1)% info.length;
         return info[frente];
     }
 }

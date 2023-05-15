@@ -16,8 +16,6 @@ public class listaDinamica {
       }
       return suma;
     }
-
-
     public static void main(String[] args){
         listaDinamica listad = new listaDinamica();
         System.out.println("Numeros: ");
