@@ -1,41 +1,28 @@
 public class Nodo {
     protected Object info;
-    protected Nodo point, next;
-
+    protected Nodo next;
     public Nodo(){
+        next = null;
         info = null;
-        point = next=null;
     }
-
-    public Nodo(Object x){
-        info =x;
-        point =next =null;
+    public Nodo(Object x, Nodo dir){
+        this.info =x;
+        this.next = dir;
     }
-
-    public void setPoint(Nodo p){
-        point =p;
+    public void setNext(Nodo dir){
+        this.next = dir;
     }
-
-    public void setNext(Nodo p){
-        next = p;
-    }
-
     public void setInfo(Object x){
-        info =x;
+        this.info =x;
     }
-    public Nodo getPoint(){
-        return point;
-    }
-
     public Nodo getNext(){
         return next;
     }
-
     public Object getInfo(){
         return info;
     }
-
+    @Override
     public String toString(){
-        return ""+info;
+        return ""+this.info;
     }
 }
