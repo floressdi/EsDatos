@@ -7,9 +7,7 @@ public class Main {
             tree.crearArbol(n = (int) (Math.random() *1000));
             System.out.println(n+"");
         }
-
         System.out.println("In-orden");
         tree.print();
-
     }
 }
